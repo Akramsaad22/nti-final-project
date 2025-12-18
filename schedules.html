@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Schedules - MKS Educational Platform</title>
+  <meta name="description"
+    content="View and enroll in upcoming classes at MKS. Find the perfect schedule that fits your learning needs.">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/schedules.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <!-- Logo on Left -->
+      <a class="navbar-brand" href="index.html">
+        <span class="logo-m">M</span><span class="logo-k">K</span><span class="logo-s">S</span>
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Centered Navigation Links -->
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="instructors.html">Instructors</a></li>
+          <li class="nav-item"><a class="nav-link active" href="schedules.html">Schedules</a></li>
+          <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Login & Register on Right -->
+        <div class="d-flex align-items-center nav-auth">
+          <a href="login.html" class="btn-login">Login</a>
+          <a href="register.html" class="btn btn-register">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Schedules Hero Section -->
+  <section class="schedules-hero">
+    <div class="container">
+      <div class="hero-content text-center">
+        <h1 class="schedules-title">Class Schedules</h1>
+        <p class="schedules-subtitle">Find and enroll in upcoming classes that fit your schedule. Learn at your own pace
+          with our flexible timing options.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-card">
+        <div class="row g-3 align-items-end">
+          <div class="col-lg-3 col-md-6">
+            <label class="filter-label">
+              <i class="fas fa-book-open"></i> Course Category
+            </label>
+            <select class="form-select custom-select" id="courseFilter">
+              <option value="">All Courses</option>
+              <option value="programming">Programming</option>
+              <option value="design">Design</option>
+              <option value="data analyst">Data Analysis</option>
+              <option value="languages">Languages</option>
+              <option value="digital marketing">Digital Marketing </option>
+            </select>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <label class="filter-label">
+              <i class="fas fa-chalkboard-teacher"></i> Instructor
+            </label>
+            <select class="form-select custom-select" id="instructorFilter">
+              <option value="">All Instructors</option>
+              <option value="ahmed">Ahmed Hassan</option>
+              <option value="sarah">Sarah Johnson</option>
+              <option value="mohamed">Mohamed Ali</option>
+              <option value="fatima">Fatima Khalil</option>
+            </select>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <label class="filter-label">
+              <i class="fas fa-calendar-alt"></i> Date
+            </label>
+            <input type="date" class="form-control custom-date" id="dateFilter">
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <button class="btn btn-filter-search w-100">
+              <i class="fas fa-search"></i> Search Classes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedules Section -->
+  <section class="schedules-section">
+    <div class="container">
+
+      <!-- Results Header -->
+      <div class="results-header">
+        <h3 class="results-title">Available Classes</h3>
+        <span class="results-count">8 classes found</span>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Schedule Card 1 -->
+        <div class="col-lg-6">
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <div class="schedule-category">
+                <i class="fas fa-laptop-code"></i> Programming
+              </div>
+              <span class="status-badge upcoming">Upcoming</span>
+            </div>
+            <h3 class="schedule-course-name">Web Development Fundamentals</h3>
+            <div class="schedule-details">
+              <div class="schedule-detail">
+                <i class="fas fa-user-tie"></i>
+                <span>Ahmed Hassan</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-calendar"></i>
+                <span>Dec 20, 2025</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-clock"></i>
+                <span>10:00 AM - 12:00 PM</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-hourglass-half"></i>
+                <span>2 Hours</span>
+              </div>
+            </div>
+            <div class="schedule-footer">
+              <div class="schedule-price">
+                <span class="price-label">Price:</span>
+                <span class="price-value">$49</span>
+              </div>
+              <a href="#" class="btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schedule Card 2 -->
+        <div class="col-lg-6">
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <div class="schedule-category">
+                <i class="fas fa-paint-brush"></i> Design
+              </div>
+              <span class="status-badge ongoing">Ongoing</span>
+            </div>
+            <h3 class="schedule-course-name">UI/UX Design Masterclass</h3>
+            <div class="schedule-details">
+              <div class="schedule-detail">
+                <i class="fas fa-user-tie"></i>
+                <span>Sarah Johnson</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-calendar"></i>
+                <span>Dec 17, 2025</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-clock"></i>
+                <span>2:00 PM - 5:00 PM</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-hourglass-half"></i>
+                <span>3 Hours</span>
+              </div>
+            </div>
+            <div class="schedule-footer">
+              <div class="schedule-price">
+                <span class="price-label">Price:</span>
+                <span class="price-value">$69</span>
+              </div>
+              <a href="#" class="btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schedule Card 3 -->
+        <div class="col-lg-6">
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <div class="schedule-category">
+                <i class="fa-solid fa-chart-line"></i> Data Analysis
+              </div>
+              <span class="status-badge upcoming">Upcoming</span>
+            </div>
+            <h3 class="schedule-course-name">Advanced Data Analysis</h3>
+            <div class="schedule-details">
+              <div class="schedule-detail">
+                <i class="fas fa-user-tie"></i>
+                <span>Mohamed Ali</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-calendar"></i>
+                <span>Dec 22, 2025</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-clock"></i>
+                <span>9:00 AM - 11:00 AM</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-hourglass-half"></i>
+                <span>2 Hours</span>
+              </div>
+            </div>
+            <div class="schedule-footer">
+              <div class="schedule-price">
+                <span class="price-label">Price:</span>
+                <span class="price-value">$39</span>
+              </div>
+              <a href="#" class="btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schedule Card 4 -->
+        <div class="col-lg-6">
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <div class="schedule-category">
+               <i class="fas fa-laptop-code"></i>CS
+              </div>
+              <span class="status-badge upcoming">Upcoming</span>
+            </div>
+            <h3 class="schedule-course-name">programming fundamental</h3>
+            <div class="schedule-details">
+              <div class="schedule-detail">
+                <i class="fas fa-user-tie"></i>
+                <span>Fatima Khalil</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-calendar"></i>
+                <span>Dec 23, 2025</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-clock"></i>
+                <span>4:00 PM - 6:00 PM</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-hourglass-half"></i>
+                <span>2 Hours</span>
+              </div>
+            </div>
+            <div class="schedule-footer">
+              <div class="schedule-price">
+                <span class="price-label">Price:</span>
+                <span class="price-value">$45</span>
+              </div>
+              <a href="#" class="btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schedule Card 5 -->
+        <div class="col-lg-6">
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <div class="schedule-category">
+                <i class="fas fa-laptop-code"></i> Programming
+              </div>
+              <span class="status-badge ongoing">Ongoing</span>
+            </div>
+            <h3 class="schedule-course-name">Python for Data Science</h3>
+            <div class="schedule-details">
+              <div class="schedule-detail">
+                <i class="fas fa-user-tie"></i>
+                <span>Mohamed Ali</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-calendar"></i>
+                <span>Dec 17, 2025</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-clock"></i>
+                <span>6:00 PM - 8:00 PM</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-hourglass-half"></i>
+                <span>2 Hours</span>
+              </div>
+            </div>
+            <div class="schedule-footer">
+              <div class="schedule-price">
+                <span class="price-label">Price:</span>
+                <span class="price-value">$59</span>
+              </div>
+              <a href="#" class="btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schedule Card 6 -->
+        <div class="col-lg-6">
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <div class="schedule-category">
+                <i class="fas fa-briefcase"></i> Business
+              </div>
+              <span class="status-badge upcoming">Upcoming</span>
+            </div>
+            <h3 class="schedule-course-name">Digital Marketing Essentials</h3>
+            <div class="schedule-details">
+              <div class="schedule-detail">
+                <i class="fas fa-user-tie"></i>
+                <span>Layla Ahmed</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-calendar"></i>
+                <span>Dec 25, 2025</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-clock"></i>
+                <span>11:00 AM - 1:00 PM</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-hourglass-half"></i>
+                <span>2 Hours</span>
+              </div>
+            </div>
+            <div class="schedule-footer">
+              <div class="schedule-price">
+                <span class="price-label">Price:</span>
+                <span class="price-value">$55</span>
+              </div>
+              <a href="#" class="btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schedule Card 7 -->
+        <div class="col-lg-6">
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <div class="schedule-category">
+                <i class="fas fa-atom"></i> React 
+              </div>
+              <span class="status-badge upcoming">Upcoming</span>
+            </div>
+            <h3 class="schedule-course-name"> Intro TO Mobile Development Using React Native. </h3>
+            <div class="schedule-details">
+              <div class="schedule-detail">
+                <i class="fas fa-user-tie"></i>
+                <span>Omar Ibrahim</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-calendar"></i>
+                <span>Dec 26, 2025</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-clock"></i>
+                <span>3:00 PM - 5:30 PM</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-hourglass-half"></i>
+                <span>2.5 Hours</span>
+              </div>
+            </div>
+            <div class="schedule-footer">
+              <div class="schedule-price">
+                <span class="price-label">Price:</span>
+                <span class="price-value">$65</span>
+              </div>
+              <a href="#" class="btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schedule Card 8 -->
+        <div class="col-lg-6">
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <div class="schedule-category">
+                <i class="fas fa-code"></i> Back-End
+              </div>
+              <span class="status-badge upcoming">Upcoming</span>
+            </div>
+            <h3 class="schedule-course-name">PHP Bootcamp</h3>
+            <div class="schedule-details">
+              <div class="schedule-detail">
+                <i class="fas fa-user-tie"></i>
+                <span>Nour El-Din</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-calendar"></i>
+                <span>Dec 28, 2025</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-clock"></i>
+                <span>10:00 AM - 1:00 PM</span>
+              </div>
+              <div class="schedule-detail">
+                <i class="fas fa-hourglass-half"></i>
+                <span>3 Hours</span>
+              </div>
+            </div>
+            <div class="schedule-footer">
+              <div class="schedule-price">
+                <span class="price-label">Price:</span>
+                <span class="price-value">$75</span>
+              </div>
+              <a href="#" class="btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-dark">
+    <div class="container">
+
+      <div class="row footer-top">
+        <!-- Left -->
+        <div class="col-lg-4 mb-4">
+          <h3 class="footer-logo">
+            M<span>K</span>S
+          </h3>
+          <p class="footer-desc">
+            we are not here to sell you products,
+            we sell value through our expertise.
+          </p>
+
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Center -->
+        <div class="col-lg-4 mb-4">
+          <h5>Address:</h5>
+          <p>address, Road, egypt.</p>
+
+          <h5>Phone:</h5>
+          <p>+2349022396389</p>
+
+          <h5>Email:</h5>
+          <p>mks@gmail.com</p>
+        </div>
+
+        <!-- Right -->
+        <div class="col-lg-4 mb-4">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-subscribe text-center">
+        <h4>Subscribe to get latest updates</h4>
+
+        <form class="subscribe-form">
+          <input type="email" placeholder="Your Email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKS - Educational Platform</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <!-- Logo on Left -->
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-m">M</span><span class="logo-k">K</span><span class="logo-s">S</span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Centered Navigation Links -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instructors.html">Instructors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedules.html">Schedules</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- Login & Register on Right -->
+                <div class="d-flex align-items-center nav-auth">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <a href="login.html#signup" class="btn btn-register">Register</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1>A Classical Education for the <span class="highlight">Future</span></h1>
+                        <p>We prepare you to engage in the world that is and to help bring about a world that ought to
+                            be</p>
+                        <button class="btn btn-get-started">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <img src="assets/img/hero-student.png" alt="Student">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-btn">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section" id="courses">
+        <div class="container">
+
+            <!-- Section Title -->
+            <div class="section-title">
+                <h2>Popular Courses</h2>
+                <p>Explore our most demanded courses</p>
+            </div>
+
+            <!-- Courses Grid -->
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=500&fit=crop"
+                            alt="Marketing">
+                        <div class="course-overlay">
+                            <h3>Marketing</h3>
+                            <p>Master digital marketing strategies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=500&fit=crop"
+                            alt="Design">
+                        <div class="course-overlay">
+                            <h3>Design</h3>
+                            <p>Create stunning visual experiences</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=500&fit=crop"
+                            alt="Programming">
+                        <div class="course-overlay">
+                            <h3>Programming</h3>
+                            <p>Build powerful applications</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=500&fit=crop"
+                            alt="Technology">
+                        <div class="course-overlay">
+                            <h3>Technology</h3>
+                            <p>Explore cutting-edge tech</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- See More Button -->
+            <div class="text-center mt-5">
+                <a href="courses.html" class="btn see-more-btn">See more</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Us</h2>
+                <p>We provide the best learning experience</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Expert Instructors</h4>
+                        <p>Learn from industry professionals with years of experience</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Lifetime Access</h4>
+                        <p>Access course materials anytime, anywhere, forever</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Certification</h4>
+                        <p>Get recognized certificates upon completion</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Community</h4>
+                        <p>Join thousands of learners worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-box">
+                        <h2>10K+</h2>
+                        <p>Active Students</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-box">
+                        <h2>500+</h2>
+                        <p>Total Courses</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-box">
+                        <h2>150+</h2>
+                        <p>Expert Instructors</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-box">
+                        <h2>98%</h2>
+                        <p>Satisfaction Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Content -->
+                <div class="col-lg-4">
+                    <span class="reviews-label">Reviews</span>
+
+                    <h2 class="reviews-title">
+                        What Our <br>
+                        <span>Students</span> Say <br>
+                        About Us
+                    </h2>
+
+                    <div class="reviews-nav">
+                        <button class="review-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="review-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Cards -->
+                <div class="col-lg-8">
+                    <div class="reviews-cards">
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="assets/img/OIP.webp" alt="User">
+                                <div>
+                                    <h4>Mohh Jumah</h4>
+                                    <span>Senior Developer</span>
+                                </div>
+                            </div>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Consectetur ac blandit nam
+                                massa massa elementum mollis lectus.
+                            </p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="assets/img/OIP (1).webp" alt="User">
+                                <div>
+                                    <h4>John Mark</h4>
+                                    <span>Data Analyst</span>
+                                </div>
+                            </div>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Consectetur ac blandit nam
+                                massa massa elementum mollis lectus.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Learning?</h2>
+            <p>Join thousands of students already learning on MKS</p>
+            <a href="register.html" class="btn btn-get-started">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-dark">
+        <div class="container">
+
+            <div class="row footer-top">
+                <!-- Left -->
+                <div class="col-lg-4 mb-4">
+                    <h3 class="footer-logo">
+                        M<span>K</span>S
+                    </h3>
+                    <p class="footer-desc">
+                        we are not here to sell you products,
+                        we sell value through our expertise.
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Center -->
+                <div class="col-lg-4 mb-4">
+                    <h5>Address:</h5>
+                    <p>address, Road, egypt.</p>
+
+                    <h5>Phone:</h5>
+                    <p>+2349022396389</p>
+
+                    <h5>Email:</h5>
+                    <p>mks@gmail.com</p>
+                </div>
+
+                <!-- Right -->
+                <div class="col-lg-4 mb-4">
+                    <h5>Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Subscribe -->
+            <div class="footer-subscribe text-center">
+                <h4>Subscribe to get latest updates</h4>
+
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const authArea = document.getElementById("auth-area");
+    const currentUser = localStorage.getItem("currentUser");
+
+    if (currentUser) {
+        // مستخدم مسجل
+        authArea.innerHTML = `
+            <span class="me-3 fw-bold">Welcome 👋</span>
+            <button class="btn btn-danger btn-sm" onclick="logout()">Logout</button>
+        `;
+    } else {
+        // مش مسجل
+        authArea.innerHTML = `
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="login.html#signup" class="btn btn-register">Register</a>
+        `;
+    }
+
+    function logout() {
+        localStorage.removeItem("currentUser");
+        window.location.href = "index.html";
+    }
+</script>
+</body>
+
+</html>
